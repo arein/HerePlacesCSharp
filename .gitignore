@@ -1,0 +1,186 @@
+
+
+All Gists
+arein
+ 
+ 
+Star6 
+Fork3 PUBLIC
+ kmorcinek / gitignore.txt
+Last active on Jun 14
+ Code
+ Revisions 4
+ Stars 6
+ Forks 3
+Embed URL
+	
+HTTPS clone URL
+	
+You can clone with HTTPS or SSH.
+
+ Download Gist
+Example .gitignore file I use for C# projects
+ gitignore.txt Raw
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+#git ls-files –others –exclude-from=.git/info/exclude 
+# Lines that start with ‘#’ are comments. 
+# For a project mostly in C, the following would be a good set of 
+# exclude patterns (uncomment them if you want to use them): 
+# *.[oa] 
+# *~
+# there are two bins here because apparently Silverlight calls the folder Bin instead of bin
+# these folders should never be checked in as this contains the compiled code for configurations 
+bin
+Bin
+bin/*
+Bin/* 
+obj
+Obj
+# this is a Visual Studio user solution file, it contains your personal settings and should not be checked in 
+# if sharing the repo with other people, if it is just your repo you can remove this 
+*.suo
+# this folder is created when using RIA Services with a Silverlight application, the code from one project 
+# is copied here, thus it shouldn’t be checked into source control 
+Generated_Code
+# Projects can also have user settings so this ignores those files as well 
+*.user
+ 
+# Compiled source #
+###################
+*.com
+*.class
+# *.dll
+*.exe
+*.o
+*.so
+ 
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+ 
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+ 
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+ 
+# below are rules added by me (@kmorcinek)
+ 
+# NCrunch
+*.crunchsolution.cache
+*.ncrunchsolution
+*.ncrunchproject
+ 
+# Resharper
+_ReSharper.*
+ 
+# vim
+*.txt~
+*.swp
+*.swo
+ 
+# svn
+.svn
+ 
+# My specific Visual Studio
+*.vsp
+*.psess
+
+Write Preview Parsed as Markdown  Edit in fullscreen
+
+Comment
+Status API Blog About © 2014 GitHub, Inc. Terms Privacy Security Contact 
