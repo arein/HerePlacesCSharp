@@ -14,7 +14,9 @@ In order to use the Here Places API you need a [Nokia Developer Account](https:/
 Installation
 ===============
 
-# TODO
+In the Package Manager type Install-Package HerePlacesCSharp 
+
+Or download the source and build the project yourself.
 
 Usage
 ===============
