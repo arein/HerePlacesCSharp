@@ -3,6 +3,8 @@
 
 This Repository allows you to easily integrate the [Here Places REST API](https://developer.here.com/rest-apis/documentation/places/topics/overview.html) into your C# apps.
 
+This wrapper currently only supports the [Around](https://developer.here.com/rest-apis/documentation/places/topics_api/resource-around.html) endpoint of Here while the Places API offers [further endpoints](https://developer.here.com/rest-apis/documentation/places/topics/search-discovery-entrypoints.html).
+
 Platforms
 ===============
 The API was tested on Windows Phone 8 and Windows Phone 8.1. It is built using the [async programming model](http://msdn.microsoft.com/en-us/library/vstudio/hh191443.aspx).
@@ -48,6 +50,7 @@ Contributing
 You're invited to contribute to the repo. There are a few tasks that could be done:
 * Add support for further Platforms
 * Add further options e.g. limit the category type or specify the number of results
+* Integrate further [Here Places Endpoints](https://developer.here.com/rest-apis/documentation/places/topics/search-discovery-entrypoints.html)
 
 Apps Using this Library
 ===============
